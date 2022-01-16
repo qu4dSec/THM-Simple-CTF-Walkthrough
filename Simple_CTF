@@ -77,11 +77,11 @@ OS and Service detection performed. Please report any incorrect results at https
 Let's try to log in as anonymous via FTP and try to get what's inside.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
-ftp 10.10.142.164 -p 21
+ftp [TARGET_İP] -p 21
 -----------------------
-Connected to 10.10.142.164.
+Connected to [TARGET_İP].
 220 (vsFTPd 3.0.3)
-Name (10.10.142.164:root): anonymous
+Name ([TARGET_İP]:root): anonymous
 230 Login successful.
 Remote system type is UNIX.
 Using binary mode to transfer files.
@@ -136,14 +136,14 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2022-01-16 09:59:
 
 next step ssh login
 
-ssh mitch@10.10.142.164 -p 2222
+ssh mitch@[TARGET_İP] -p 2222
 -------------------------------
-The authenticity of host '[10.10.142.164]:2222 ([10.10.142.164]:2222)' can't be established.
+The authenticity of host '[10.10.142.164]:2222 ([TARGET_İP]:2222)' can't be established.
 ED25519 key fingerprint is SHA256:iq4f0XcnA5nnPNAufEqOpvTbO8dOJPcHGgmeABEdQ5g.
 This key is not known by any other names
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
-Warning: Permanently added '[10.10.142.164]:2222' (ED25519) to the list of known hosts.
-mitch@10.10.142.164's password: 
+Warning: Permanently added '[TARGET_İP]:2222' (ED25519) to the list of known hosts.
+mitch@[TARGET_İP]1's password: 
 Welcome to Ubuntu 16.04.6 LTS (GNU/Linux 4.15.0-58-generic i686)
 
  * Documentation:  https://help.ubuntu.com
